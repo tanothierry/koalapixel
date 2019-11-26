@@ -338,7 +338,7 @@ footer p{
   margin-bottom: 2rem; 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (min-width:300px) and (max-width: 600px){
   .header{
     min-height: 85vh;
   }
