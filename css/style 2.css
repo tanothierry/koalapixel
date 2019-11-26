@@ -145,6 +145,7 @@ ol .carousel-circle{
   color: black;
   font-weight: 500;
 }
+
 .nav-list li a:hover{
   color: #f0c166;
   font-weight: 500;
@@ -340,7 +341,8 @@ footer p{
 
 @media screen and (min-width:300px) and (max-width: 600px){
   .header{
-    min-height: 85vh;
+    min-height: 30vh;
+    margin: 0;
   }
 
   .carousel-topbar ul li{
@@ -353,6 +355,14 @@ footer p{
     top: 50%;
     left: 20%;
     transform: translate(-20%,-50%);
+  }
+
+  .nav-list li{
+    padding: .2rem .4rem;
+  }
+
+  .nav-list li a{
+    font-size: .8rem;
   }
 
   .part-two{
@@ -372,7 +382,7 @@ footer p{
   .header-carousel .carousel-item .carousel-image2,
   .header-carousel .carousel-item .carousel-image3{
     background-size: cover;
-    height: 85vh;
+    height: 30vh;
     width: 100%;
     position: relative;
   }
