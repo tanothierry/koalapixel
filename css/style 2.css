@@ -1,3 +1,7 @@
+:root{
+  --color-blue: #0e77a7;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
 
 /* General code*/
@@ -262,12 +266,20 @@ ol .carousel-circle{
 .icon-service{
   width: 7rem;
   height: 7rem;
-  background-color: #942d2a;
+  background-color: var(--color-blue);
   border-radius: 50%;
   padding: 1.3rem;
   justify-content: center;
   margin: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   /* border: .1rem solid #f0c166; */
+}
+
+.icon{
+  color: white; 
+  font-size: 3rem; 
 }
 
 .four-service{
@@ -296,7 +308,6 @@ ol .carousel-circle{
   min-height: 40rem;
   background: linear-gradient(#942e2a83,#942e2a83 ) ,url('../img/heart-529607_1280.jpg');
   background-size: cover;
-
 }
 
 .block-galerie{
@@ -385,6 +396,31 @@ footer p{
     height: 30vh;
     width: 100%;
     position: relative;
+  }
+
+}
+
+
+@media screen and (min-width:650px) and (max-width: 991px){
+  .four{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .four-service{
+    flex: 1 0 45%;
+    margin: 1rem auto;
+    padding: .5rem 2.5rem;
+  }
+
+  .part-tree{
+    background-color: black;
+    height: 18rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px/ 70px inherit;
+    margin-top: 5rem;
   }
 
 }
