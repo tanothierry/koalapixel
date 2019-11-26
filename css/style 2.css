@@ -176,7 +176,7 @@ ol .carousel-circle{
 }
 
 
-/* WELCOME ************************************** */
+/* PART TWO ************************************** */
 
 
 .part-two{
@@ -316,17 +316,67 @@ ol .carousel-circle{
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.73);
   border-top: .3rem solid #f0c166;
   transition: .8s;
+}
 
+.photo1 img{
+  filter: grayscale(1);
+  transition: .8s;
+}
+
+.photo1 img:hover{
+  filter: grayscale(0);
+  transition: .8s;
 }
 
 .photo1:hover{
-  transform:rotate(360deg);
+  /* transform:rotate(360deg); */
   transition: .8s;
 }
 
 footer p{
   text-align: center;
   margin-bottom: 2rem; 
+}
+
+@media screen and (max-width: 600px){
+  .header{
+    min-height: 85vh;
+  }
+
+  .carousel-topbar ul li{
+    padding: .4rem;
+    font-size: .65rem;
+  }
+  
+  .carousel-title{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%,-50%);
+  }
+
+  .part-two{
+    display: block;
+  }
+
+  .four{
+    display: block  ;
+  }
+
+  .care-video{
+    width: 80%;
+    margin: 4rem auto;
+  }
+
+  .header-carousel .carousel-item .carousel-image1,
+  .header-carousel .carousel-item .carousel-image2,
+  .header-carousel .carousel-item .carousel-image3{
+    background-size: cover;
+    height: 85vh;
+    width: 100%;
+    position: relative;
+  }
+
 }
 
 
