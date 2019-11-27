@@ -427,7 +427,9 @@ footer p{
     display: block  ;
   }
 
-  .care-video{
+  .care-video,
+  .care-video1,
+  .care-video2{
     width: 80%;
     margin: 4rem auto;
   }
